@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"}/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+</head>
+<body>
+<!--<header th:insert="blocks/header :: header"></header>-->
+
+<div class="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class ="navbar-header">
+                <a href="/" class="navbar-brand">Ctechnology</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/about">О нас</a></li>
+                    <li> <a href="/contact">Обратная связь</a></li>
+                    <li> <a href="/clients">Наши клиенты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Добро пожаловать!</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/images/2021-07-30 10.18.11.jpg" width="100%" height="100%" class="img-responsive" alt="...">
+            <div class="carousel-caption">
+                <h3>Основная система банков</h3>
+                <a href="/system" class="btn btn-warning">Подробнее</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/2021-07-30 10.19.17.jpg" width="100%" height="100%" class="img-responsive" alt="...">
+            <div class="carousel-caption">
+                <h3>Мобильный и интернет банкинг</h3>
+                <a href="/banking" class="btn btn-warning">Подробнее</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/images/2021-07-30 10.19.34.jpg" width="100%" height="100%" class="img-responsive" alt="...">
+            <div class="carousel-caption">
+                <h3>Система оповещений для клиентов банка</h3>
+                <a class="btn btn-warning" href="/notif" role="button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<br>
+<br>
+
+<h1>Наше местоположение</h1>
+
+<br>
+<br>
+
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab77a8874e5197666876af361314f6aca89de8bf98e1f959d391736bf3e0438c9&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script></main>
+
+<!--<div th:insert="blocks/footer :: footer"></div>-->
+
+<footer class="footer clearfix">
+    <div class="container">
+
+        <div class="social">
+
+            <a href="https://www.facebook.com/CTechnologyKyrgyzRepublic/" class="social__item facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" class="social__item g-plus">
+                <i class="fa fa-google" aria-hidden="true"></i>
+            </a>
+
+            <a href="#" class="social__item instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+
+        </div> <!-- .social -->
+
+        <br>
+
+        <div class="footer__copyright">Copyright © 2021 C Technology All rights reserved</div>
+
+    </div> <!-- .container -->
+</footer>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
